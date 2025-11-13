@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Talk|Patient Wellness Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!--Sidebar-->
+      <aside class="sidebar">
+        <h2>HealthTalk</h2>
+        <nav>
+          <ul>
+            <li><i class="fa-solid fa-house"></i> Overview</li>
+            <li><i class="fa-solid fa-calendar-days"></i> Appointments</li>
+            <li><i class="fa-solid fa-capsules"></i> Prescriptions</li>
+            <li><i class="fa-solid fa-file-medical"></i> Reports</li>
+            <li><i class="fa-solid fa-gear"></i> Settings</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content-->
+      <main>
+        <!--Header-->
+        <header class="header">
+          <div class="Patient-info">
+            <img class="patient-image"
+              src="https://t3.ftcdn.net/jpg/04/86/97/42/360_F_486974273_dUwSjpsxu71HT2ySqUuHI30XDik7F5SV.jpg"
+              alt="Patient Photo"
+            />
+
+            <div>
+              <h3>John Doe</h3>
+              <small>Patient ID:HT-1021</small>
+            </div>
+          
+          <i class="fa-solid fa-bell notification"></i>
+        </header>
+
+        <!-- Health Summary-->
+        <section class="cards-section">
+          <div class="card">
+            <i class="fa-soild fa-heartbeat"></i>
+            <p>Heart Rate</p>
+            <b>76 bpm</b>
+          </div>
+
+          <div class="card">
+            <i class="fa-soild fa-tint"></i>
+            <p>Blood Pressure</p>
+            <b>120/80</b>
+          </div>
+
+          <div class="card">
+            <i class="fa-soild fa-wind"></i>
+            <p>Oxygen Level</p>
+            <b>98%</b>
+          </div>
+
+          <div class="card">
+            <i class="fa-soild fa-weight-scale"></i>
+            <p>BMI</p>
+            <b>22.3</b>
+          </div>
+        </section>
+
+        <!-- Appointment Table -->
+        <section class="appointments">
+          <h3>Upcoming Appointments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Doctor</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15 Nov 2025</td>
+                <td>Dr. Mehta</td>
+                <td>Cardiology</td>
+              </tr>
+              <tr>
+                <td>25 Nov 2025</td>
+                <td>Dr. Sharma</td>
+                <td>Nutrition</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--Prescription List-->
+        <section class="Prescriptions">
+          <h3>Prescriptions</h3>
+          <ul> 
+            <li><b> Paracetamol 500mg</b>-Twice daily, 5 Days (Dr.Mehta)</li>
+           
+            <li><b> Vitamin D3</b>-Once daily, 10 Days (Dr.Sharma)</li>
+          </ul>
+        </section>
+
+        <!-- Patient Profile-->
+        <section class="profile">
+          <h3>Patient Profile</h3>
+          <div class="profile-grid">
+            <p><b>Name:</b> John Doe</p>
+            <p><b>Age:</b> 32</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Email:</b> johndoe@mail.com</p>
+            <p><b>Phone:</b> +91 98765 43210</p>
+            <p><b>Doctor Assigned:</b> Dr. Mehta</p>
+          </div>
+        </section>
+      </main>
+    </div> 
+    
+</div>
+  </body>
+</html>

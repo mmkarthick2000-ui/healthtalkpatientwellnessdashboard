@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5fafa;
+  color: #333;
+}
+
+/* Layout */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+/*Sidebar*/
+.sidebar {
+  background: #00979d;
+  color: white;
+  padding: 25px 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li i {
+  margin-right: 10px;
+}
+
+.sidebar li:hover {
+  color: #bdf7f5;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-info img {
+  border-radius: 50%;
+}
+
+.notification {
+  font-size: 1.2rem;
+  color: #00979d;
+}
+
+/* Health Cards */
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card i {
+  color: #00979d;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+.card p {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+/* Appointments Table */
+table {
+  width: 95%;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #e6f8f7;
+  text-align: left;
+}
+td {
+  color: #555;
+}
+
+/* Prescription List */
+.prescriptions ul {
+  list-style: none;
+  background: #fff;
+  margin: 0 20px 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.prescriptions li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.prescriptions li:last-child {
+  border-bottom: none;
+}
+
+/* Profile Section */
+.profile-grid {
+  background: #fff;
+  margin: 0 20px 30px;
+  padding: 15px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  margin: 20px 20px 10px;
+  color: #007c7e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    text-align: center;
+  }
+  table,
+  .prescriptions ul,
+  .profile-grid {
+    width: 90%;
+  }
+}
